@@ -1,0 +1,37 @@
+# Dependencies (restore with Composer)
+/vendor/
+/node_modules/
+
+# Local configuration and credentials
+.env
+.env.*
+!.env.example
+/config/*.local.php
+auth.json
+*.pem
+*.key
+
+# Runtime files and test output
+/storage/*
+!/storage/.gitkeep
+*.log
+.phpunit.result.cache
+.phpunit.cache/
+/coverage/
+
+# Local database exports; retain the sanitized schema
+*.sql
+!/mvc_blog_system.sql
+*.sqlite
+*.sqlite3
+*.db
+
+# OS, editors, archives and unreviewed media
+.DS_Store
+._*
+__MACOSX/
+.idea/
+.vscode/
+*.zip
+*.mov
+/ssler/
